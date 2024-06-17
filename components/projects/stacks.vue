@@ -9,7 +9,7 @@
       <div align="center" class="bg-neutral-800 p-5 rounded-lg">
         <div>
           <p class="mb-4 font-mono uppercase text-lg">tools</p>
-          <img src="https://skillicons.dev/icons?i=phpstorm,idea,vscode,git,github,docker,linux,bun" />
+          <img src="https://skillicons.dev/icons?i=phpstorm,idea,vscode,git,github,docker,linux,nodejs,bun" />
           <br>
         </div>
         <div>
