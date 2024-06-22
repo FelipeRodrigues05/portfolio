@@ -3,23 +3,23 @@
 <template>
   <div class="justify-center items-center flex mt-20">
     <div class="bg-neutral-800 p-5 mx-5 rounded-lg w-[50rem] max-w-[50rem] lg:p-16">
-      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+      <ol class="relative border-s border-neutral-200 dark:border-neutral-700">
         <li class="mb-10 ms-4">
           <div
-            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+            class="absolute w-3 h-3 bg-neutral-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-neutral-900 dark:bg-neutral-700">
           </div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022 - June
+          <time class="mb-1 text-sm font-normal leading-none text-neutral-400 dark:text-neutral-500">April 2022 - June
             2022</time>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">
             Pryzant Design
           </h3>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p class="mb-4 text-base font-normal text-neutral-500 dark:text-neutral-400">
             A <span class="font-bold underline">Pryzant Design</span> é uma empresa focada em criação de sites usando
             wordpress.
           </p>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p class="mb-4 text-base font-normal text-neutral-500 dark:text-neutral-400">
             Projetos Desenvolvidos:
-          <ol class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <ol class="mb-4 text-base font-normal text-neutral-500 dark:text-neutral-400">
             <li>
               - Tutorial para usar o Visualizer
             </li>
@@ -38,20 +38,20 @@
         </li>
         <li class="mb-10 ms-4">
           <div
-            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+            class="absolute w-3 h-3 bg-neutral-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-neutral-900 dark:bg-neutral-700">
           </div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2023 -
+          <time class="mb-1 text-sm font-normal leading-none text-neutral-400 dark:text-neutral-500">April 2023 -
             Actually</time>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">
             PraJá Securitizadora
           </h3>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p class="mb-4 text-base font-normal text-neutral-500 dark:text-neutral-400">
             A <span class="font-bold underline">PraJá</span> é uma empresa focada em antecipação de recebiveis dos
             pretadores de serviço, tem como objetivo a segurança de seus clientes e seus negócios.
           </p>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p class="mb-4 text-base font-normal text-neutral-500 dark:text-neutral-400">
             Projetos Desenvolvidos:
-          <ol class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <ol class="mb-4 text-base font-normal text-neutral-500 dark:text-neutral-400">
             <li>
               - Integração com Clicksign para assinaturas online
             </li>
