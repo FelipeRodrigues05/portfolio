@@ -13,7 +13,7 @@
             <p
                 class="text-3xl mb-2 font-bold relative w-[max-content] font-mono before:absolute before:inset-0 before:animate-typewriter before:bg-neutral-900"
             >
-                Software Engineer
+                Software Developer
             </p>
 
             <HeroSocial-Media />
