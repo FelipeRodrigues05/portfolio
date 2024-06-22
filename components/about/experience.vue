@@ -2,7 +2,7 @@
 
 <template>
   <div class="justify-center items-center flex mt-20">
-    <div class="bg-neutral-800 p-16 rounded-lg w-[50rem] max-w-[50rem]">
+    <div class="bg-neutral-800 p-5 mx-5 rounded-lg w-[50rem] max-w-[50rem] lg:p-16">
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <li class="mb-10 ms-4">
           <div

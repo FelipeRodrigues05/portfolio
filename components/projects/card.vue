@@ -6,7 +6,7 @@ const { data }: any = await useFetch(
 </script>
 
 <template>
-  <div class="grid grid-cols-3 gap-2 max-w-7xl justify-center items-center pt-5">
+  <div class="grid gap-2 max-w-7xl justify-center items-center pt-5 lg:grid-cols-3">
     <div v-for="repository in data" :key="repository.id">
       <a :href="repository.html_url" target="_blank"
         class="block max-w-sm p-6 bg-white border border-neutral-200 rounded-lg shadow hover:bg-neutral-100 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:bg-neutral-700">
