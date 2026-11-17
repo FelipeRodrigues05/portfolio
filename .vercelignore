@@ -1,0 +1,13 @@
+# The Vercel CLI uploads the working directory as-is (it does not read .gitignore).
+# Keep local build artifacts out so Vercel always builds from source.
+node_modules
+.output
+.nuxt
+.nitro
+.data
+.cache
+.vercel
+dist
+*.log
+.env
+.env.*

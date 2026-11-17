@@ -10,7 +10,13 @@ useHead({
   script: [
     // Runs before first paint: enables reveal animations only when JS is available,
     // so the static HTML is fully readable without JavaScript.
-    { innerHTML: "document.documentElement.classList.add('js')", tagPosition: "head" },
+    // If the app never boots (e.g. a script fails to load), drop the class after
+    // a grace period so hidden-until-revealed content is shown anyway.
+    {
+      innerHTML:
+        "var d=document.documentElement;d.classList.add('js');setTimeout(function(){if(!window.__appReady)d.classList.remove('js')},2500)",
+      tagPosition: "head",
+    },
   ],
 });
 </script>

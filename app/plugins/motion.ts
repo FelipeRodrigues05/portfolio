@@ -75,4 +75,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.directive("reveal", reveal);
   nuxtApp.vueApp.directive("spotlight", spotlight);
   nuxtApp.vueApp.directive("magnetic", magnetic);
+  // Tells the fail-safe in app.vue that hydration happened
+  nuxtApp.hook("app:mounted", () => {
+    (window as any).__appReady = true;
+  });
 });
