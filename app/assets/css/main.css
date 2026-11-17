@@ -11,7 +11,7 @@
   --color-ink: #09090b;
   --color-ink-2: #111114;
   --color-line: rgb(255 255 255 / 0.08);
-  --color-acid: #c4f25a;
+  --color-accent: #c084fc;
 
   --animate-marquee: marquee 40s linear infinite;
   --animate-float: float 10s ease-in-out infinite;
@@ -45,11 +45,11 @@
     @apply bg-ink font-sans text-neutral-200 antialiased;
   }
   ::selection {
-    background: var(--color-acid);
+    background: var(--color-accent);
     color: var(--color-ink);
   }
   :focus-visible {
-    outline: 2px solid var(--color-acid);
+    outline: 2px solid var(--color-accent);
     outline-offset: 3px;
     border-radius: 4px;
   }

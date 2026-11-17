@@ -46,8 +46,8 @@ const tagline = useScramble(site.taglines);
         <div class="space-y-5">
           <p class="flex items-center gap-2.5 font-mono text-xs tracking-widest text-neutral-300 uppercase">
             <span class="relative flex size-2.5">
-              <span v-if="site.available" class="absolute inline-flex size-full animate-ping rounded-full bg-acid opacity-75" />
-              <span class="relative inline-flex size-2.5 rounded-full" :class="site.available ? 'bg-acid' : 'bg-neutral-500'" />
+              <span v-if="site.available" class="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
+              <span class="relative inline-flex size-2.5 rounded-full" :class="site.available ? 'bg-accent' : 'bg-neutral-500'" />
             </span>
             {{ site.availability }}
           </p>
@@ -55,7 +55,7 @@ const tagline = useScramble(site.taglines);
             <span class="text-violet-400" aria-hidden="true">&gt;</span>
             <span class="sr-only">{{ site.taglines.join(", ") }}</span>
             <span aria-hidden="true"> {{ tagline }}</span>
-            <span aria-hidden="true" class="animate-blink ml-1 inline-block h-[1em] w-[0.55em] translate-y-[0.15em] bg-acid" />
+            <span aria-hidden="true" class="animate-blink ml-1 inline-block h-[1em] w-[0.55em] translate-y-[0.15em] bg-accent" />
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const tagline = useScramble(site.taglines);
           <a
             v-magnetic
             href="#projetos"
-            class="group inline-flex items-center gap-2 rounded-full bg-acid px-6 py-3.5 font-semibold text-ink"
+            class="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 font-semibold text-ink"
           >
             Ver projetos
             <Icon name="ph:arrow-down" class="transition-transform group-hover:translate-y-0.5" aria-hidden="true" />

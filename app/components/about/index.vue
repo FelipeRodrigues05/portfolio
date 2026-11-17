@@ -38,7 +38,7 @@ const badge = `${site.availability} • ${site.location} • `;
             <text class="fill-neutral-200 font-mono text-[13px] tracking-[0.18em] uppercase">
               <textPath href="#badge-circle" textLength="485">{{ badge }}</textPath>
             </text>
-            <circle cx="100" cy="100" r="7" class="fill-acid" />
+            <circle cx="100" cy="100" r="7" class="fill-accent" />
           </svg>
         </div>
 
@@ -54,16 +54,16 @@ const badge = `${site.availability} • ${site.location} • `;
             </template>
           </p>
 
-          <dl class="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">
+          <dl class="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line">
             <div
               v-for="(fact, i) in about.facts"
               :key="fact.label"
               v-reveal
               :style="{ '--delay': `${i * 90}ms` }"
-              class="bg-ink p-6"
+              class="bg-ink p-5 md:p-6"
             >
               <dt class="font-mono text-[11px] tracking-widest text-neutral-400 uppercase">{{ fact.label }}</dt>
-              <dd class="mt-2 font-display text-3xl font-extrabold tracking-tight text-acid">{{ fact.value }}</dd>
+              <dd class="mt-2 font-display text-2xl font-extrabold tracking-tight whitespace-nowrap text-accent sm:text-3xl md:text-4xl">{{ fact.value }}</dd>
             </div>
           </dl>
 

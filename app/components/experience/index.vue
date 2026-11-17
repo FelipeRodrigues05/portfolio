@@ -12,14 +12,14 @@ import { experiences } from "~/data/portfolio";
       <ol class="relative">
         <!-- Timeline rail + scroll-driven fill -->
         <span aria-hidden="true" class="absolute top-0 bottom-0 left-[11px] w-px bg-line md:left-[15px]" />
-        <span aria-hidden="true" class="timeline-fill absolute top-0 bottom-0 left-[11px] w-px bg-linear-to-b from-acid via-violet-500 to-indigo-500 md:left-[15px]" />
+        <span aria-hidden="true" class="timeline-fill absolute top-0 bottom-0 left-[11px] w-px bg-linear-to-b from-accent via-violet-500 to-indigo-500 md:left-[15px]" />
 
         <li v-for="(job, i) in experiences" :key="job.company" class="group relative pb-20 pl-12 last:pb-0 md:pl-20">
           <span
             aria-hidden="true"
-            class="absolute top-2 left-0 grid size-6 place-items-center rounded-full border border-white/20 bg-ink transition-colors group-hover:border-acid md:size-8"
+            class="absolute top-2 left-0 grid size-6 place-items-center rounded-full border border-white/20 bg-ink transition-colors group-hover:border-accent md:size-8"
           >
-            <span class="size-2 rounded-full bg-violet-400 transition-colors group-hover:bg-acid" />
+            <span class="size-2 rounded-full bg-violet-400 transition-colors group-hover:bg-accent" />
           </span>
 
           <article v-reveal class="grid gap-6 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] lg:gap-16">
@@ -44,7 +44,7 @@ import { experiences } from "~/data/portfolio";
                 :href="job.url"
                 target="_blank"
                 rel="noopener"
-                class="mt-5 inline-flex items-center gap-1.5 text-sm text-neutral-300 underline-offset-4 hover:text-acid hover:underline"
+                class="mt-5 inline-flex items-center gap-1.5 text-sm text-neutral-300 underline-offset-4 hover:text-accent hover:underline"
               >
                 Visitar site <span class="sr-only">da {{ job.company }} (abre em nova aba)</span>
                 <Icon name="ph:arrow-up-right" aria-hidden="true" />
@@ -55,7 +55,7 @@ import { experiences } from "~/data/portfolio";
               <p class="text-lg leading-relaxed text-neutral-300">{{ job.summary }}</p>
               <ul class="mt-6 space-y-3">
                 <li v-for="item in job.highlights" :key="item" class="flex gap-3 text-neutral-300">
-                  <span aria-hidden="true" class="mt-2.5 h-px w-4 shrink-0 bg-acid" />
+                  <span aria-hidden="true" class="mt-2.5 h-px w-4 shrink-0 bg-accent" />
                   {{ item }}
                 </li>
               </ul>

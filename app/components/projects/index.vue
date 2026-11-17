@@ -31,7 +31,7 @@ const github = socials.find((s) => s.label === "GitHub");
         :href="github.href"
         target="_blank"
         rel="noopener"
-        class="group mt-10 inline-flex items-center gap-2 font-mono text-sm tracking-wider text-neutral-300 uppercase hover:text-acid"
+        class="group mt-10 inline-flex items-center gap-2 font-mono text-sm tracking-wider text-neutral-300 uppercase hover:text-accent"
       >
         Mais no GitHub <span class="sr-only">(abre em nova aba)</span>
         <Icon name="ph:arrow-up-right" class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />

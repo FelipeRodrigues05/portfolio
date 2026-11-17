@@ -27,7 +27,7 @@ onBeforeUnmount(() => clearInterval(interval));
 <template>
   <a
     href="#conteudo"
-    class="sr-only z-[70] rounded bg-acid px-4 py-2 font-mono text-sm text-ink focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
+    class="sr-only z-[70] rounded bg-accent px-4 py-2 font-mono text-sm text-ink focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
   >
     Pular para o conteúdo
   </a>
@@ -38,7 +38,7 @@ onBeforeUnmount(() => clearInterval(interval));
       class="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-line bg-ink/60 py-2 pr-2 pl-5 backdrop-blur-xl"
     >
       <a href="#topo" class="font-display text-lg font-extrabold tracking-tight" aria-label="Início">
-        FR<span class="text-acid">.</span>
+        FR<span class="text-accent">.</span>
       </a>
 
       <ul class="hidden items-center gap-1 font-mono text-xs tracking-wider uppercase md:flex">
@@ -47,7 +47,7 @@ onBeforeUnmount(() => clearInterval(interval));
             :href="link.href"
             class="group flex items-center gap-1.5 rounded-full px-3 py-2 text-neutral-400 transition-colors hover:bg-white/5 hover:text-white"
           >
-            <span class="text-[10px] text-violet-400 group-hover:text-acid">0{{ i + 1 }}</span>
+            <span class="text-[10px] text-violet-400 group-hover:text-accent">0{{ i + 1 }}</span>
             {{ link.label }}
           </a>
         </li>
@@ -59,7 +59,7 @@ onBeforeUnmount(() => clearInterval(interval));
         </span>
         <a
           href="#contato"
-          class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-acid"
+          class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-accent"
         >
           Fale comigo
         </a>

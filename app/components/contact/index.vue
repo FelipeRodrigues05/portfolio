@@ -17,13 +17,13 @@ const year = new Date().getFullYear();
         <p v-reveal class="font-display text-[clamp(3rem,10vw,9rem)] leading-[0.85] font-extrabold tracking-[-0.04em] text-white uppercase">
           Vamos<br>
           <span class="text-outline">construir</span><br>
-          algo<span class="text-acid">?</span>
+          algo<span class="text-accent">?</span>
         </p>
 
         <a
           v-magnetic="0.4"
           :href="`mailto:${site.email}`"
-          class="group grid size-44 place-items-center justify-self-start rounded-full bg-acid text-center font-display text-lg font-bold text-ink transition-transform hover:scale-105 md:size-56 lg:justify-self-end"
+          class="group grid size-44 place-items-center justify-self-start rounded-full bg-accent text-center font-display text-lg font-bold text-ink transition-transform hover:scale-105 md:size-56 lg:justify-self-end"
         >
           <span class="flex flex-col items-center gap-1">
             <Icon name="ph:envelope-simple" class="size-7" aria-hidden="true" />
@@ -39,7 +39,7 @@ const year = new Date().getFullYear();
               :href="s.href"
               :target="s.href.startsWith('mailto:') ? undefined : '_blank'"
               rel="noopener"
-              class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm text-neutral-300 transition-colors hover:border-acid hover:text-acid"
+              class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm text-neutral-300 transition-colors hover:border-accent hover:text-accent"
             >
               <Icon :name="s.icon" class="size-4" aria-hidden="true" />
               {{ s.label }}
@@ -48,7 +48,7 @@ const year = new Date().getFullYear();
         </ul>
         <div class="flex items-center gap-6 font-mono text-xs text-neutral-500">
           <span>© {{ year }} {{ site.name }} · {{ site.location }}</span>
-          <a href="#topo" class="inline-flex items-center gap-1 hover:text-acid">
+          <a href="#topo" class="inline-flex items-center gap-1 hover:text-accent">
             Topo <Icon name="ph:arrow-up" aria-hidden="true" />
           </a>
         </div>

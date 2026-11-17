@@ -14,12 +14,12 @@ defineProps<{ project: Project; index: number }>();
   >
     <header class="flex items-start justify-between gap-4">
       <p class="font-mono text-[11px] tracking-widest text-neutral-400 uppercase">
-        <span class="text-acid">{{ String(index + 1).padStart(2, "0") }}</span> / {{ project.kind }}
+        <span class="text-accent">{{ String(index + 1).padStart(2, "0") }}</span> / {{ project.kind }}
       </p>
       <Icon
         name="ph:arrow-up-right"
         aria-hidden="true"
-        class="size-6 shrink-0 text-neutral-500 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-acid"
+        class="size-6 shrink-0 text-neutral-500 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-accent"
       />
     </header>
 
@@ -69,7 +69,7 @@ defineProps<{ project: Project; index: number }>();
           :href="project.repo"
           target="_blank"
           rel="noopener"
-          class="inline-flex items-center gap-1.5 text-white underline-offset-4 hover:text-acid hover:underline"
+          class="inline-flex items-center gap-1.5 text-white underline-offset-4 hover:text-accent hover:underline"
         >
           <Icon name="ph:github-logo" aria-hidden="true" /> Código
           <span class="sr-only">de {{ project.title }} (abre em nova aba)</span>
@@ -79,7 +79,7 @@ defineProps<{ project: Project; index: number }>();
           :href="project.demo"
           target="_blank"
           rel="noopener"
-          class="inline-flex items-center gap-1.5 text-white underline-offset-4 hover:text-acid hover:underline"
+          class="inline-flex items-center gap-1.5 text-white underline-offset-4 hover:text-accent hover:underline"
         >
           <Icon name="ph:arrow-up-right" aria-hidden="true" /> Demo
           <span class="sr-only">de {{ project.title }} (abre em nova aba)</span>
