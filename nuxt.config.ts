@@ -7,6 +7,10 @@ export default defineNuxtConfig({
   modules: ["@nuxt/icon", "@nuxt/fonts"],
   css: ["~/assets/css/main.css"],
 
+  // Inline the CSS into the prerendered HTML so the page never depends on a
+  // separately hashed stylesheet (its name varies with the build path).
+  features: { inlineStyles: true },
+
   vite: {
     plugins: [tailwindcss()],
   },
